@@ -1,12 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
+import MainMint from "./components/MainMint";
+import NavBar from "./components/NavBar";
 
 
 function App() {
+
+  const [accounts, setAccounts] = useState([]);
+
+  
   return (
     <div>
-      teste
-
-
+        <NavBar accounts={accounts} setAccounts={setAccounts}/>
     </div>
   );
 }
