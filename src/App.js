@@ -11,6 +11,7 @@ function App() {
   return (
     <div>
         <NavBar accounts={accounts} setAccounts={setAccounts}/>
+        <MainMint accounts={accounts} setAccounts={setAccounts}/>
     </div>
   );
 }

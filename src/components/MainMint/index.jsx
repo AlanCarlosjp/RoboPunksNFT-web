@@ -49,11 +49,11 @@ const handleIncrement = () => {
         {isConnected ? (
             <div>
                 <div>
-                <button onClick={handleDecrement()}>-</button>
+                <button onClick={handleDecrement}>-</button>
                 <input type="number" value={mintAmount}/>
-                <button onClick={handleIncrement()}>+</button>
+                <button onClick={handleIncrement}>+</button>
                 </div>
-                <button onClick={handleMint()}>Mint now</button>
+                <button onClick={handleMint}>Mint now</button>
             </div>
         ): (<>You must be connected to Mint</>)}
 </div>
