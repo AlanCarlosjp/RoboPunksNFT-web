@@ -26,6 +26,7 @@ function MainMint({accounts, setAccounts}) {
             console.log('response: ', response)
         }catch(e){
             console.log("error: ", e)
+            alert("You may dont have gas limit")
         }
     }
 }
@@ -42,7 +43,7 @@ const handleIncrement = () => {
 
 
   return (
-    <Flex justify={"center"} align={"center"} height={"100vh"} paddingBottom={"150px"}>
+    <Flex justifyContent={"center"} alignItems={"center"} height={"100vh"} paddingBottom={"150px"}>
     <Box width={"520px"}>
       <Text fontSize={"48px"} textShadow={"0 5px #000000"}>RoboPunks</Text>
     </Box>
