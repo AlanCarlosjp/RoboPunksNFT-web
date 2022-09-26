@@ -38,7 +38,15 @@ function NavBar({ accounts, setAccounts }) {
                 <Box margin="0 15px">Team</Box>
             </Flex>
             {isConnected ? (
-                <Box margin="0 15px">Connected</Box>
+                <Box backgroundColor="#D6517D"
+                borderRadius="5px"
+                boxShadow="0px 2px 2px 1px #0F0F0F"
+                color="white"
+                cursor="pointer"
+                fontFamily="inherit"
+                padding="15px"
+                margin="0 15px"
+                >Connected</Box>
             ) : (
                 <Button onClick={connectAccounts}
                 backgroundColor="#D6517D"
@@ -48,7 +56,8 @@ function NavBar({ accounts, setAccounts }) {
                 cursor="pointer"
                 fontFamily="inherit"
                 padding="15px"
-                margin="0 15px">Connect</Button>
+                margin="0 15px"
+                >Connect</Button>
             )}
 
         </Flex>
